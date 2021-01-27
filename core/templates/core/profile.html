@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <h1 class="text-primary">Profile</h1>
+                <hr>
+                <h1 class="text-center text-danger">Welcome {{ username }}</h1>
+                <div class="mt-5 text-center">
+                    <a class="btn btn-primary" href="{% url 'user_logout' %}">Logout</a>
+                    <a class="btn btn-primary" href="{% url 'change_password' %}">Change Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
